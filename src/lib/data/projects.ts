@@ -10,8 +10,8 @@ export const projectsData: Project[] = [
       "https://drive.google.com/uc?export=view&id=1Vuvcvt2bp0rBpMFASYrAWncFX4vxacuY", // Google Drive direct image link
     ],
     technologies: ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Tailwind CSS', 'NextJS'],
-    liveLink: '#',
-    repoLink: '#',
+    liveLink: 'dimasapradana-portfolioapp.vercel.app',
+    repoLink: 'https://github.com/dimas405/Web-App-Portfolio/tree/main',
     featured: true,
   },
   {
