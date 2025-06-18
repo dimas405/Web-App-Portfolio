@@ -133,7 +133,7 @@ const careerJourney = [
     title: "S1 Teknik Informatika",
     institution: "Universitas Muhammadyah Ponorogo",
     date: "2019 - 2023",
-    description: "Focused on software engineering, algorithms, and web development. Graduated with honors.",
+    description: "Focused on software engineering, algorithms, and web development.",
     isTransfer: true,
   },
   {
