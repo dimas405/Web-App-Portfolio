@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 const codeLines = [
   { text: "class ProgrammerProfile {", color: "text-purple-400 dark:text-purple-300" },
-  { text: '    String name = "Your Name Here";', color: "text-pink-400 dark:text-pink-300" },
+  { text: '    String name = "Dimas A. Pradana";', color: "text-pink-400 dark:text-pink-300" },
   { text: '    String role = "Programmer, Front-End Developer, Full-Stack, UI/UX Designer";', color: "text-pink-400 dark:text-pink-300" },
   { text: '    String focus = "Building Awesome Web Apps";', color: "text-pink-400 dark:text-pink-300" },
   { text: " ", color: "" },
