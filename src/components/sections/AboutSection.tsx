@@ -156,7 +156,7 @@ const careerJourney = [
     title: "Full-Stack Engineer",
     institution: "Universitas PGRI Madiun · Hybrid ",
     date: "Sep 2023 - Dec 2024 · 4 bln",
-    description: "• Merancang aplikasi berbasis web Sistem Informasi Rekapitulasi Tridharma Dosen\n• Frontend: Mendesain dan mengimplementasikan UI Web App Sisfo PMPS\n• Backend: Mendesain struktur database untuk data pengajaran, penelitian, abdimas, Pengabdian Masyarakat), dan penunjang",
+    description: "• Merancang aplikasi berbasis web Sistem Informasi Rekapitulasi Tridharma Dosen\n• Frontend: Mendesain dan mengimplementasikan UI Web App Sisfo PMPS\n• Backend: Mendesain struktur database untuk data pengajaran, penelitian, abdimas (Pengabdian Masyarakat), dan penunjang",
     isInternship: true,
   },
 ];
@@ -172,7 +172,7 @@ const certificatesData = [
     id: 'cert2',
     name: 'Internship Certificat',
     imageUrl: 'https://drive.google.com/uc?export=view&id=10Xur8CxsSkqsFg3ON2VuWmdG9ZwZrhvp',
-    imageHint: 'Internship Certification',
+    imageHint: 'Sertifikat Magang',
   },
   {
     id: 'cert3',
