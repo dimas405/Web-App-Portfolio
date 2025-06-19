@@ -170,7 +170,7 @@ const certificatesData = [
   },
   {
     id: 'cert2',
-    name: 'Internship Certificat',
+    name: 'Sertifikat Magang',
     imageUrl: 'https://drive.google.com/uc?export=view&id=10Xur8CxsSkqsFg3ON2VuWmdG9ZwZrhvp',
     imageHint: 'Sertifikat Magang',
   },
