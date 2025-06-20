@@ -9,8 +9,7 @@ import { ParticleBG } from '@/components/layout/ParticleBG';
 
 
 export const metadata: Metadata = {
-  title: 'Codefolio - Developer Portfolio',
-  description: 'A personal portfolio website showcasing projects and skills.',
+  title: 'Portfolio - Dimas A. Pradana
 };
 
 export default function RootLayout({
