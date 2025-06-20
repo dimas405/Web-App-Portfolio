@@ -156,7 +156,7 @@ const careerJourney = [
     title: "Full-Stack Engineer",
     institution: "Universitas PGRI Madiun · Hybrid ",
     date: "Sep 2023 - Dec 2024 · 4 bln",
-    description: "• Merancang aplikasi berbasis web Sistem Informasi Rekapitulasi Tridharma Dosen\n• Frontend: Mendesain dan mengimplementasikan UI Web App Sisfo PMPS\n• Backend: Mendesain struktur database untuk data pengajaran, penelitian, abdimas (Pengabdian Masyarakat), dan penunjang",
+    description: "• Merancang aplikasi berbasis web Sistem Informasi Rekapitulasi Tridharma Dosen\n• Frontend: Mendesain dan mengimplementasikan UI Web App Sisfo PMPS\n• Backend: Mendesain struktur database untuk data pengajaran, penelitian, abdimas, Pengabdian Masyarakat), dan penunjang",
     isInternship: true,
   },
 ];
@@ -164,15 +164,15 @@ const careerJourney = [
 const certificatesData = [
   {
     id: 'cert1',
-    name: 'Seminar Micro Technology',
+    name: 'Seminar Micro Tech',
     imageUrl: 'https://drive.google.com/uc?export=view&id=1T1HpnQGaG5oRB5twGUb84YIp_yT75BiZ',
-    imageHint: 'Seminar Micro Technology',
+    imageHint: 'Seminar Micro Tech',
   },
   {
     id: 'cert2',
-    name: 'Sertifikat Magang',
+    name: 'Internship Certificat',
     imageUrl: 'https://drive.google.com/uc?export=view&id=10Xur8CxsSkqsFg3ON2VuWmdG9ZwZrhvp',
-    imageHint: 'Sertifikat Magang',
+    imageHint: 'Internship Certification',
   },
   {
     id: 'cert3',
@@ -379,35 +379,34 @@ export function AboutSection() {
           </Card>
         </div>
 
-        {/* Career Journey Section */}
         <div className="w-full max-w-4xl mx-auto">
-            <h3 className="text-2xl sm:text-3xl font-bold font-headline text-center mb-10 mt-16 md:mt-24">Career <span className="text-primary dark:text-orange-400">Journey</span></h3>
+            <h3 className="text-2xl sm:text-3xl font-bold font-headline text-center mb-10 mt-16 md:mt-24">Career <span className="text-accent dark:text-accent">Journey</span></h3>
             <div className="relative space-y-10">
-                <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary/40 via-accent/30 to-primary/40 dark:from-orange-400/40 dark:via-pink-500/30 dark:to-purple-600/40 -translate-x-1/2 hidden md:block rounded-full"></div>
+                <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-accent/40 via-accent/30 to-accent/40 dark:from-accent/40 dark:via-accent/30 dark:to-accent/40 -translate-x-1/2 hidden md:block rounded-full"></div>
                 
                 {careerJourney.map((item, index) => (
                     <div key={index} className="md:grid md:grid-cols-2 md:gap-8 items-start relative">
                     <div className={`md:col-start-${index % 2 === 0 ? 1 : 2} md:row-start-1 md:text-${index % 2 === 0 ? 'right' : 'left'}`}>
-                        <div className="relative p-px bg-gradient-to-br from-primary/50 via-accent/30 to-primary/50 dark:from-orange-400/50 dark:via-pink-500/30 dark:to-purple-600/50 rounded-xl shadow-[0_0_10px_1px_hsl(var(--primary)/0.5),_0_0_5px_0px_hsl(var(--accent)/0.3)] hover:shadow-[0_0_15px_2px_hsl(var(--primary)/0.6),_0_0_8px_1px_hsl(var(--accent)/0.35)] dark:shadow-[0_0_10px_1px_theme(colors.orange.400/0.75),_0_0_5px_0px_theme(colors.pink.500/0.15)] dark:hover:shadow-[0_0_15px_2px_theme(colors.orange.400/0.85),_0_0_8px_1px_theme(colors.pink.500/0.2)] transition-all duration-300 transform md:hover:-translate-y-px">
-                        <Card className="bg-card rounded-[calc(0.75rem-1px)]">
+                        <div className="relative p-px bg-gradient-to-br from-accent/50 via-accent/30 to-accent/50 dark:from-accent/50 dark:via-accent/30 dark:to-accent/50 rounded-xl shadow-[0_0_10px_1px_hsl(var(--accent)/0.5),_0_0_5px_0px_hsl(var(--accent)/0.3)] hover:shadow-[0_0_15px_2px_hsl(var(--accent)/0.6),_0_0_8px_1px_hsl(var(--accent)/0.35)] dark:shadow-[0_0_10px_1px_hsl(var(--accent)/0.75),_0_0_5px_0px_hsl(var(--accent)/0.15)] dark:hover:shadow-[0_0_15px_2px_hsl(var(--accent)/0.85),_0_0_8px_1px_hsl(var(--accent)/0.2)] transition-all duration-300 transform md:hover:-translate-y-px">
+                        <Card className="bg-popover dark:bg-card rounded-[calc(0.75rem-1px)]">
                             <CardHeader className="pb-2 sm:pb-3">
                             <div className={`flex items-center mb-1.5 sm:mb-2 ${index % 2 === 0 ? 'flex-row md:flex-row-reverse' : 'flex-row'}`}>
-                                <div className={`p-1.5 sm:p-2 bg-gradient-to-tr from-primary/15 to-accent/15 dark:from-orange-400/15 dark:to-pink-500/15 text-primary dark:text-orange-400 rounded-full shrink-0 mr-3 ${index % 2 === 0 ? 'md:mr-0 md:ml-3' : 'md:mr-3'}`}>
+                                <div className={`p-1.5 sm:p-2 bg-gradient-to-tr from-accent/15 to-secondary/15 dark:from-accent/15 dark:to-secondary/15 text-accent dark:text-accent rounded-full shrink-0 mr-3 ${index % 2 === 0 ? 'md:mr-0 md:ml-3' : 'md:mr-3'}`}>
                                 <item.icon className="h-5 w-5 sm:h-6 sm:w-6" />
                                 </div>
-                                <CardTitle className="text-base sm:text-lg font-headline flex-1">{item.title}</CardTitle>
+                                <CardTitle className="text-base sm:text-lg font-headline flex-1 text-popover-foreground dark:text-card-foreground">{item.title}</CardTitle>
                             </div>
                             <p className="text-xs sm:text-sm text-muted-foreground">{item.institution} &bull; {item.date}</p>
                             </CardHeader>
                             <CardContent className="pt-0">
-                              <p className="text-sm text-foreground/80 whitespace-pre-line">{item.description}</p>
+                              <p className="text-sm text-popover-foreground/80 dark:text-card-foreground/80 whitespace-pre-line">{item.description}</p>
                               {item.isTransfer && (
                                 <div className="mt-3 flex justify-start">
                                   <Badge
                                     variant="secondary"
                                     className="text-xs sm:text-sm px-3 py-2 rounded-full shadow-md inline-flex items-center cursor-default"
                                   >
-                                    <GitBranch className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2 text-primary/90 dark:text-orange-500/90" />
+                                    <GitBranch className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2 text-accent/90 dark:text-accent/90" />
                                     Transfer/Pindah
                                   </Badge>
                                 </div>
@@ -418,7 +417,7 @@ export function AboutSection() {
                                     variant="secondary"
                                     className="text-xs sm:text-sm px-3 py-2 rounded-full shadow-md inline-flex items-center cursor-default"
                                   >
-                                    <Briefcase className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2 text-primary/90 dark:text-orange-500/90" />
+                                    <Briefcase className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2 text-accent/90 dark:text-accent/90" />
                                     Magang
                                   </Badge>
                                 </div>
@@ -427,7 +426,7 @@ export function AboutSection() {
                         </Card>
                         </div>
                     </div>
-                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-primary dark:bg-orange-400 rounded-full border-[3px] border-card shadow-[0_0_8px_1px_hsl(var(--primary))] dark:shadow-[0_0_8px_1px_theme(colors.orange.400)] hidden md:block"></div>
+                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-accent dark:bg-accent rounded-full border-[3px] border-card dark:border-popover shadow-[0_0_8px_1px_hsl(var(--accent))] dark:shadow-[0_0_8px_1px_hsl(var(--accent))] hidden md:block"></div>
                     </div>
                 ))}
             </div>
@@ -437,10 +436,3 @@ export function AboutSection() {
     </section>
   );
 }
-
-
-    
-
-      
-
-    
