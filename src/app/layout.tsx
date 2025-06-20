@@ -9,8 +9,9 @@ import { ParticleBG } from '@/components/layout/ParticleBG';
 
 
 export const metadata: Metadata = {
-  title: 'Portfolio - Dimas A. Pradana
+  title: 'Portfolio - Dimas A. Pradana'
 };
+
 
 export default function RootLayout({
   children,
