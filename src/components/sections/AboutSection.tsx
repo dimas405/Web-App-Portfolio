@@ -164,13 +164,13 @@ const careerJourney = [
 const certificatesData = [
   {
     id: 'cert1',
-    name: 'Seminar Micro Tech',
+    name: 'Seminar Micro Technology',
     imageUrl: 'https://drive.google.com/uc?export=view&id=1T1HpnQGaG5oRB5twGUb84YIp_yT75BiZ',
     imageHint: 'Seminar Micro Tech',
   },
   {
     id: 'cert2',
-    name: 'Internship Certificat',
+    name: 'Sertifikat Magang',
     imageUrl: 'https://drive.google.com/uc?export=view&id=10Xur8CxsSkqsFg3ON2VuWmdG9ZwZrhvp',
     imageHint: 'Internship Certification',
   },
