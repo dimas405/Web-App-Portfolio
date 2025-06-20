@@ -37,15 +37,17 @@ export function Header() {
       <header
         className={cn(
           "hidden md:flex fixed top-0 left-0 right-0 z-50 transition-all duration-300 items-center",
-          isScrolled ? "bg-background/80 backdrop-blur-md shadow-[0_4px_10px_0_hsl(var(--primary)/0.2)] dark:shadow-[0_4px_15px_0_hsl(var(--primary)/0.25)]" : "bg-transparent"
+          isScrolled ? "bg-background/80 backdrop-blur-md shadow-[0_4px_10px_0_hsl(var(--accent)/0.2)] dark:shadow-[0_4px_15px_0_hsl(var(--primary)/0.25)]" : "bg-transparent"
         )}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
             <Link href="/" className="flex items-center space-x-2 group">
-              <Code2 className="h-8 w-8 text-primary transition-transform duration-300 group-hover:rotate-12" />
-              <span className="text-2xl font-bold font-headline">Dimas A.</span>
-              <span className="text-2xl font-bold font-headline group-hover:text-primary transition-colors">
+              <Code2 className="h-8 w-8 text-accent dark:text-primary transition-transform duration-300 group-hover:rotate-12" />
+              <span className="text-2xl font-bold font-headline">
+                Dimas A.
+              </span>
+              <span className="text-2xl font-bold font-headline group-hover:text-accent dark:group-hover:text-primary transition-colors">
                 Pradana
               </span>
             </Link>
@@ -56,8 +58,9 @@ export function Header() {
                   <Link
                     href={item.href}
                     className={cn(
-                        "hover:text-primary transition-colors px-3 py-2 rounded-md font-medium",
-                        pathname === item.href ? "text-primary" : "text-foreground/80"
+                        "transition-colors px-3 py-2 rounded-md font-medium",
+                        "text-foreground/80 hover:text-accent dark:hover:text-primary",
+                        pathname === item.href && "text-accent dark:text-primary"
                     )}
                   >
                     {item.name}
@@ -84,22 +87,26 @@ export function Header() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "flex flex-col items-center justify-center w-full h-full relative group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-card rounded-md transition-colors duration-150 ease-in-out py-1"
+                  "flex flex-col items-center justify-center w-full h-full relative group focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-card rounded-md transition-colors duration-150 ease-in-out py-1"
                 )}
                 aria-label={item.name}
                 aria-current={isActive ? "page" : undefined}
                 title={item.name}
               >
                 {isActive && (
-                  <span className="absolute top-1 h-1 w-7 bg-primary rounded-full" />
+                  <span className="absolute top-1 h-1 w-7 bg-accent dark:bg-primary rounded-full" />
                 )}
                 <item.icon className={cn(
                   "h-6 w-6", 
-                  isActive ? "text-primary" : "text-foreground/70 group-hover:text-primary dark:text-muted-foreground dark:group-hover:text-primary"
+                  isActive 
+                    ? "text-accent dark:text-primary" 
+                    : "text-foreground/70 group-hover:text-accent dark:text-muted-foreground dark:group-hover:text-primary"
                 )} />
                 <span className={cn(
                   "text-xs leading-tight mt-1 tracking-tight",
-                  isActive ? "text-primary font-medium" : "text-foreground/70 group-hover:text-primary dark:text-muted-foreground dark:group-hover:text-primary"
+                  isActive 
+                    ? "text-accent font-medium dark:text-primary" 
+                    : "text-foreground/70 group-hover:text-accent dark:text-muted-foreground dark:group-hover:text-primary"
                 )}>
                   {item.name}
                 </span>
@@ -109,16 +116,16 @@ export function Header() {
           {mounted ? (
             <button
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className="flex flex-col items-center justify-center w-full h-full relative group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-card rounded-md transition-colors duration-150 ease-in-out py-1"
+              className="flex flex-col items-center justify-center w-full h-full relative group focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-card rounded-md transition-colors duration-150 ease-in-out py-1"
               aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
               title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
             >
               {theme === "light" ? (
-                <Moon className="h-6 w-6 text-foreground/70 group-hover:text-primary dark:text-muted-foreground dark:group-hover:text-primary" />
+                <Moon className="h-6 w-6 text-foreground/70 group-hover:text-accent dark:text-muted-foreground dark:group-hover:text-primary" />
               ) : (
-                <Sun className="h-6 w-6 text-foreground/70 group-hover:text-primary dark:text-muted-foreground dark:group-hover:text-primary" />
+                <Sun className="h-6 w-6 text-foreground/70 group-hover:text-accent dark:text-muted-foreground dark:group-hover:text-primary" />
               )}
-              <span className="text-xs leading-tight mt-1 tracking-tight text-foreground/70 group-hover:text-primary dark:text-muted-foreground dark:group-hover:text-primary">
+              <span className="text-xs leading-tight mt-1 tracking-tight text-foreground/70 group-hover:text-accent dark:text-muted-foreground dark:group-hover:text-primary">
                 {theme === "light" ? "Dark" : "Light"}
               </span>
             </button>
