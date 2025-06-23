@@ -1,4 +1,4 @@
-
+aku
 import type { Project } from '@/lib/types';
 
 export const projectsData: Project[] = [
@@ -41,7 +41,7 @@ export const projectsData: Project[] = [
       // 'https://drive.google.com/uc?export=view&id=1I4DeFGXNfh_9Z7YoBVUSue2KY3KO4ubf',
       // 'https://drive.google.com/uc?export=view&id=15XfEJ1YzxGdD-B-SkkH8VlefIts4FltU' 
     ],
-    technologies: ['TyoeScript', 'ReactJS', 'NextJS', 'TailwindCSS', 'Rest API'],
+    technologies: ['TypeScript', 'ReactJS', 'NextJS', 'TailwindCSS', 'Rest API'],
     liveLink: 'https://cryptoedge-scanner-betaversion.vercel.app/',
     repoLink: '#',
     featured: true,
