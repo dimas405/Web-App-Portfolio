@@ -1,4 +1,3 @@
-aku
 import type { Project } from '@/lib/types';
 
 export const projectsData: Project[] = [
