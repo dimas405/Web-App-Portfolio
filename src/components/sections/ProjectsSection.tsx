@@ -1,9 +1,8 @@
-
 import { ProjectCard } from "@/components/shared/ProjectCard";
 import { projectsData } from "@/lib/data/projects";
 
 export function ProjectsSection() {
-  const featuredProjects = projectsData.filter(p => p.featured).slice(0, 3);
+  const featuredProjects = projectsData.filter(p => p.featured);
   const otherProjects = projectsData.filter(p => !p.featured);
 
   return (
@@ -28,14 +27,14 @@ export function ProjectsSection() {
         )}
 
         {otherProjects.length > 0 && (
-           <>
+          <>
             <h3 className="text-2xl font-semibold font-headline text-center mb-8 text-foreground/90">More Projects</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {otherProjects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}
             </div>
-           </>
+          </>
         )}
       </div>
     </section>
