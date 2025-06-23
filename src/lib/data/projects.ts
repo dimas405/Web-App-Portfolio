@@ -55,7 +55,7 @@ export const projectsData: Project[] = [
       // 'https://drive.google.com/uc?export=view&id=1I4DeFGXNfh_9Z7YoBVUSue2KY3KO4ubf',
       // 'https://drive.google.com/uc?export=view&id=15XfEJ1YzxGdD-B-SkkH8VlefIts4FltU' 
     ],
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap5'],
     liveLink: 'https://game-snake-eight.vercel.app/',
     repoLink: 'https://github.com/dimas405/game-snake',
     featured: true,
