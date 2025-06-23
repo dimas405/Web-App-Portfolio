@@ -9,7 +9,7 @@ export const projectsData: Project[] = [
     imageUrls: [
       "https://drive.google.com/uc?export=view&id=1Vuvcvt2bp0rBpMFASYrAWncFX4vxacuY", // Google Drive direct image link
     ],
-    technologies: ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Tailwind CSS', 'NextJS'],
+    technologies: ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Tailwind CSS'],
     liveLink: 'dimasapradana-portfolioapp.vercel.app',
     repoLink: 'https://github.com/dimas405/Web-App-Portfolio/tree/main',
     featured: true,
@@ -34,6 +34,20 @@ export const projectsData: Project[] = [
   },
   {
     id: '4',
+    title: 'Crypto Scanner App',
+    description: 'This application helps you monitor and analyze the cryptocurrency market using AI-powered tools. With artificial intelligence, it calculates dynamic support and resistance levels to provide deeper market insights. This application is still under development.',
+    imageUrls: [
+      'https://drive.google.com/uc?export=view&id=1HSKQ1zJwlkzT5fdIAY83QQzXsHbkrJ9x' // Bluish
+      // 'https://drive.google.com/uc?export=view&id=1I4DeFGXNfh_9Z7YoBVUSue2KY3KO4ubf',
+      // 'https://drive.google.com/uc?export=view&id=15XfEJ1YzxGdD-B-SkkH8VlefIts4FltU' 
+    ],
+    technologies: ['TyoeScript', 'ReactJS', 'NextJS', 'TailwindCSS', 'Rest API'],
+    liveLink: 'https://cryptoedge-scanner-betaversion.vercel.app/',
+    repoLink: '#',
+    featured: true,
+  },
+  {
+    id: '7',
     title: 'Snake Game Web App',
     description: 'A classic snake game built with HTML, CSS, and JavaScript. Users can control the snake with arrow keys and the goal is to eat the red apples without colliding with the walls or the snake\'s own body',
     imageUrls: [
@@ -41,7 +55,7 @@ export const projectsData: Project[] = [
       // 'https://drive.google.com/uc?export=view&id=1I4DeFGXNfh_9Z7YoBVUSue2KY3KO4ubf',
       // 'https://drive.google.com/uc?export=view&id=15XfEJ1YzxGdD-B-SkkH8VlefIts4FltU' 
     ],
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap 5'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://game-snake-eight.vercel.app/',
     repoLink: 'https://github.com/dimas405/game-snake',
     featured: true,
