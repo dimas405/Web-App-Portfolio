@@ -34,7 +34,7 @@ export const projectsData: Project[] = [
   },
   {
     id: '4',
-    title: 'Crypto Scanner App',
+    title: 'CryptoEdge Scanner App',
     description: 'This application helps you monitor and analyze the cryptocurrency market using AI-powered tools. With artificial intelligence, it calculates dynamic support and resistance levels to provide deeper market insights. This application is still under development.',
     imageUrls: [
       'https://drive.google.com/uc?export=view&id=1HSKQ1zJwlkzT5fdIAY83QQzXsHbkrJ9x' // Bluish
