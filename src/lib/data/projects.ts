@@ -41,7 +41,7 @@ export const projectsData: Project[] = [
       // 'https://drive.google.com/uc?export=view&id=15XfEJ1YzxGdD-B-SkkH8VlefIts4FltU' 
     ],
     technologies: ['TypeScript', 'ReactJS', 'NextJS', 'TailwindCSS', 'Rest API'],
-    liveLink: 'https://cryptoedge-scanner-betaversion.vercel.app/',
+    liveLink: 'https://cryptoedge-scanner-prototipeversion-two.vercel.app/',
     repoLink: '#',
     featured: true,
   },
