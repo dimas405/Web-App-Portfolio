@@ -147,7 +147,7 @@ const careerJourney = [
     icon: Briefcase,
     title: "Customer Data Management",
     institution: "Telkom Witel Madiun · Onsite",
-    date: "4 Mei 2024 - 31 Mei 2024 · 1 bln",
+    date: "4 Mei 2022 - 31 Mei 2022 · 1 bln",
     description: "• Input data pre-order Indihome via crm.telkom.com\n• Modifikasi dan penambahan order pelanggan\n• Edit perpanjangan kontrak pelanggan",
     isInternship: true,
   },
