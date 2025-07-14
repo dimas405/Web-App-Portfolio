@@ -139,7 +139,7 @@ export function HomeSection() {
               <div className="mt-auto self-center md:self-start w-full sm:w-auto">
                 <Button asChild className="group w-full sm:w-auto md:h-11 md:px-8 md:text-base">
                   <Link href="https://drive.google.com/file/d/1lHE189GOIMrQo3zmeCHKnNK3IL7fSTLB/view?usp=drive_link">
-                    Hire Me <ArrowDown className="ml-2 h-4 w-4 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-y-1" />
+                    Contact Me <ArrowDown className="ml-2 h-4 w-4 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-y-1" />
                   </Link>
                 </Button>
               </div>
