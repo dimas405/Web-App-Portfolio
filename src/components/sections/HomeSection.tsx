@@ -138,7 +138,7 @@ export function HomeSection() {
               </p>
               <div className="mt-auto self-center md:self-start w-full sm:w-auto">
                 <Button asChild className="group w-full sm:w-auto md:h-11 md:px-8 md:text-base">
-                  <Link href="https://drive.google.com/file/d/1lHE189GOIMrQo3zmeCHKnNK3IL7fSTLB/view?usp=drive_link">
+                  <Link href="https://drive.google.com/file/d/1fQk748qowzukP2fWLBg1tDnLVSMjioop/view?usp=drive_link">
                     Download CV <ArrowDown className="ml-2 h-4 w-4 md:h-5 md:w-5 transition-transform duration-300 group-hover:translate-y-1" />
                   </Link>
                 </Button>
@@ -189,4 +189,5 @@ export function HomeSection() {
     </>
   );
 }
+
 
